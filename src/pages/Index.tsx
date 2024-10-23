@@ -21,7 +21,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const demoData = [
   { month: "Jan", price: 45 },
@@ -62,12 +62,12 @@ const Index = () => {
           className="text-center"
         >
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            Predicting Agricultural Commodity Prices with{" "}
+            Predicting Prices of Agri-Horticultural Commodities with{" "}
             <span className="text-green-600">AI</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Advanced ML models for accurate price predictions of pulses and vegetables
-            across 550 reporting centers in India.
+            Advanced ML models for accurate price predictions of fruits, vegetables, pulses, 
+            and other essential agricultural commodities across 550+ reporting centers in India.
           </p>
           <Button className="bg-green-600 hover:bg-green-700">
             Learn More <ArrowRight className="ml-2 h-4 w-4" />
