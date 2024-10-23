@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -79,6 +79,35 @@ const Contact = () => {
             </Card>
           </motion.div>
         </div>
+
+        {/* Founder Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="max-w-2xl mx-auto mb-16"
+        >
+          <Card>
+            <CardContent className="p-6 text-center">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Meet Our Founder</h2>
+              <div className="flex items-center justify-center gap-4 mb-4">
+                <a
+                  href="https://www.linkedin.com/in/laxminarayan87/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700"
+                >
+                  <Linkedin className="h-6 w-6" />
+                  <span>Connect on LinkedIn</span>
+                </a>
+              </div>
+              <p className="text-gray-600">
+                Connect with Laxminarayan, the founder of AgroValue, to learn more about our mission
+                and vision for revolutionizing agricultural price predictions.
+              </p>
+            </CardContent>
+          </Card>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
