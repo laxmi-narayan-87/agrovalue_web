@@ -93,7 +93,7 @@ const Contact = () => {
               <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                 <img 
                   src="https://erp.psit.ac.in/assets/img/Simages/2313455.jpg" 
-                  alt="Laxminarayan - Founder of AgroValue"
+                  alt="Laxmi Narayan - Founder of AgroValue"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -105,11 +105,11 @@ const Contact = () => {
                   className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700"
                 >
                   <Linkedin className="h-6 w-6" />
-                  <span>Connect on LinkedIn</span>
+                  <span>Connect with Laxmi Narayan</span>
                 </a>
               </div>
               <p className="text-gray-600">
-                Connect with Laxminarayan, the founder of AgroValue, to learn more about our mission
+                Connect with Laxmi Narayan, the founder of AgroValue, to learn more about our mission
                 and vision for revolutionizing agricultural price predictions.
               </p>
             </CardContent>
