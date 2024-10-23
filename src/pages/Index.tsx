@@ -22,6 +22,7 @@ import {
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const demoData = [
   { month: "Jan", price: 45 },
@@ -69,9 +70,11 @@ const Index = () => {
             Advanced ML models for accurate price predictions of fruits, vegetables, pulses, 
             and other essential agricultural commodities across 550+ reporting centers in India.
           </p>
-          <Button className="bg-green-600 hover:bg-green-700">
-            Learn More <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          <Link to="/learn-more">
+            <Button className="bg-green-600 hover:bg-green-700">
+              Learn More <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
         </motion.div>
       </section>
       <section className="container mx-auto px-4 py-16">
