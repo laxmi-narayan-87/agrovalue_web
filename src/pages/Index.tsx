@@ -12,6 +12,16 @@ import {
 } from "recharts";
 import { ArrowRight, BarChart2, Brain, Sprout } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
+import { useState, useEffect } from "react";
 
 const demoData = [
   { month: "Jan", price: 45 },
@@ -23,9 +33,27 @@ const demoData = [
 ];
 
 const Index = () => {
+  const [showBetaDialog, setShowBetaDialog] = useState(true);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
       <Navigation />
+      
+      <AlertDialog open={showBetaDialog} onOpenChange={setShowBetaDialog}>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle>Welcome to AgroValue Beta!</AlertDialogTitle>
+            <AlertDialogDescription>
+              You're using a beta version of AgroValue. Some features might be experimental or under development. 
+              We appreciate your feedback as we continue to improve our platform.
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogAction>Continue to AgroValue</AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
+
       <section className="container mx-auto px-4 py-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -101,7 +129,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-gray-50 py-12">
         <div className="container mx-auto px-4 text-center text-gray-600">
           <p>© 2024 AgroValue</p>
