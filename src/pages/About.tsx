@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Users, Target, Award } from "lucide-react";
+import Navigation from "@/components/Navigation";
 
 const About = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+      <Navigation />
       <section className="container mx-auto px-4 py-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

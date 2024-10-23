@@ -11,6 +11,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { ArrowRight, BarChart2, Brain, Sprout } from "lucide-react";
+import Navigation from "@/components/Navigation";
 
 const demoData = [
   { month: "Jan", price: 45 },
@@ -24,6 +25,7 @@ const demoData = [
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+      <Navigation />
       <section className="container mx-auto px-4 py-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
