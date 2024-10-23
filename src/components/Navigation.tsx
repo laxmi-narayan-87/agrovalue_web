@@ -18,6 +18,9 @@ const Navigation = () => {
             <Link to="/about" className="text-gray-600 hover:text-green-600 transition-colors">
               About
             </Link>
+            <Link to="/contact" className="text-gray-600 hover:text-green-600 transition-colors">
+              Contact
+            </Link>
           </div>
         </div>
       </div>
