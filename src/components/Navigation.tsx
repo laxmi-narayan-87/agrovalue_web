@@ -21,9 +21,6 @@ const Navigation = () => {
             <Link to="/" className="text-gray-600 hover:text-green-600 transition-colors">
               Home
             </Link>
-            <Link to="/learn-more" className="text-gray-600 hover:text-green-600 transition-colors">
-              Learn More
-            </Link>
             <Link to="/about" className="text-gray-600 hover:text-green-600 transition-colors">
               About
             </Link>
@@ -44,9 +41,6 @@ const Navigation = () => {
                 <div className="flex flex-col space-y-4 mt-8">
                   <Link to="/" className="text-lg font-medium text-gray-600 hover:text-green-600 transition-colors">
                     Home
-                  </Link>
-                  <Link to="/learn-more" className="text-lg font-medium text-gray-600 hover:text-green-600 transition-colors">
-                    Learn More
                   </Link>
                   <Link to="/about" className="text-lg font-medium text-gray-600 hover:text-green-600 transition-colors">
                     About
