@@ -10,13 +10,29 @@ import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
 const Contact = () => {
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent",
-      description: "Thank you for your message. We'll get back to you soon!",
-    });
-    (e.target as HTMLFormElement).reset();
+    const formData = new FormData(e.currentTarget);
+    
+    try {
+      const response = await fetch('https://docs.google.com/forms/d/e/1FAIpQLSfLWXUWPwJGNWuOD2UEEMwHG8Ld-8BmFbLhwbQD4TGhXWn8Yw/formResponse', {
+        method: 'POST',
+        mode: 'no-cors',
+        body: new FormData(e.currentTarget)
+      });
+
+      toast({
+        title: "Message Sent",
+        description: "Thank you for your message. We'll get back to you soon!",
+      });
+      (e.target as HTMLFormElement).reset();
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "There was an error sending your message. Please try again.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
@@ -124,25 +140,43 @@ const Contact = () => {
         >
           <Card>
             <CardContent className="p-6">
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form 
+                onSubmit={handleSubmit} 
+                className="space-y-6"
+                action="https://docs.google.com/forms/d/e/1FAIpQLSfLWXUWPwJGNWuOD2UEEMwHG8Ld-8BmFbLhwbQD4TGhXWn8Yw/formResponse"
+                method="post"
+                target="_blank"
+              >
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="entry.2005620554" className="block text-sm font-medium text-gray-700 mb-2">
                     Name
                   </label>
-                  <Input id="name" required placeholder="Your name" />
+                  <Input 
+                    id="entry.2005620554" 
+                    name="entry.2005620554" 
+                    required 
+                    placeholder="Your name" 
+                  />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="entry.1045781291" className="block text-sm font-medium text-gray-700 mb-2">
                     Email
                   </label>
-                  <Input id="email" type="email" required placeholder="your@email.com" />
+                  <Input 
+                    id="entry.1045781291" 
+                    name="entry.1045781291" 
+                    type="email" 
+                    required 
+                    placeholder="your@email.com" 
+                  />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="entry.839337160" className="block text-sm font-medium text-gray-700 mb-2">
                     Message
                   </label>
                   <Textarea
-                    id="message"
+                    id="entry.839337160"
+                    name="entry.839337160"
                     required
                     placeholder="How can we help you?"
                     className="min-h-[150px]"
