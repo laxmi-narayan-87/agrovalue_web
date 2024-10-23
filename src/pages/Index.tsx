@@ -24,7 +24,6 @@ const demoData = [
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
-      {/* Hero Section */}
       <section className="container mx-auto px-4 py-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -45,8 +44,6 @@ const Index = () => {
           </Button>
         </motion.div>
       </section>
-
-      {/* Features Section */}
       <section className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-3 gap-8">
           <Card className="p-6">
@@ -80,8 +77,6 @@ const Index = () => {
           </Card>
         </div>
       </section>
-
-      {/* Chart Section */}
       <section className="container mx-auto px-4 py-16 bg-white rounded-lg shadow-lg mb-20">
         <h2 className="text-3xl font-bold text-center mb-12">
           Price Trend Analysis
@@ -107,7 +102,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-gray-50 py-12">
         <div className="container mx-auto px-4 text-center text-gray-600">
-          <p>© 2024 AgroValue. A project by Ministry of Consumer Affairs, Food and Public Distribution.</p>
+          <p>© 2024 AgroValue</p>
         </div>
       </footer>
     </div>
