@@ -14,7 +14,7 @@ export const ContactInfo = () => {
           <CardContent className="p-6 text-center">
             <Mail className="h-12 w-12 text-green-600 mb-4 mx-auto" />
             <h3 className="text-xl font-semibold mb-2">Email</h3>
-            <p className="text-gray-600">LAXMINARAYAN955459+AGROVALUE@GMAIL.COM</p>
+            <p className="text-gray-600">2301641530103+AGROVALUE@PSIT.AC.IN</p>
           </CardContent>
         </Card>
       </motion.div>
