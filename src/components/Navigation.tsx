@@ -24,6 +24,9 @@ const Navigation = () => {
             <Link to="/about" className="text-gray-600 hover:text-green-600 transition-colors">
               About
             </Link>
+            <Link to="/model" className="text-gray-600 hover:text-green-600 transition-colors">
+              Try Model
+            </Link>
             <Link to="/contact" className="text-gray-600 hover:text-green-600 transition-colors">
               Contact
             </Link>
@@ -44,6 +47,9 @@ const Navigation = () => {
                   </Link>
                   <Link to="/about" className="text-lg font-medium text-gray-600 hover:text-green-600 transition-colors">
                     About
+                  </Link>
+                  <Link to="/model" className="text-lg font-medium text-gray-600 hover:text-green-600 transition-colors">
+                    Try Model
                   </Link>
                   <Link to="/contact" className="text-lg font-medium text-gray-600 hover:text-green-600 transition-colors">
                     Contact

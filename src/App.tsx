@@ -6,6 +6,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import LearnMore from "./pages/LearnMore";
 import Contact from "./pages/Contact";
+import Model from "./pages/Model";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/learn-more" element={<LearnMore />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/model" element={<Model />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
