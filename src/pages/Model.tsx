@@ -5,8 +5,8 @@ const Model = () => {
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
       <Navigation />
       
-      <div className="h-[calc(100vh-64px)]">
-        <div className="absolute top-16 left-0 right-0 p-4 text-center z-10 bg-gradient-to-b from-green-50 to-transparent">
+      <div className="container mx-auto px-4 py-8">
+        <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-green-800 hover:text-green-700 transition-colors duration-300 mb-2">
             Try Our AI Model
           </h1>
@@ -16,7 +16,7 @@ const Model = () => {
           </p>
         </div>
         
-        <div className="w-full h-full bg-white shadow-lg overflow-hidden">
+        <div className="w-full bg-white shadow-lg rounded-lg overflow-hidden" style={{ height: "600px" }}>
           <iframe
             src="https://agrovalue.streamlit.app/?embedded=true"
             width="100%"
