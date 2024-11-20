@@ -1,6 +1,4 @@
 import Navigation from "@/components/Navigation";
-import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
 
 const Model = () => {
   return (
@@ -8,24 +6,26 @@ const Model = () => {
       <Navigation />
       
       <div className="container mx-auto px-4 py-20">
-        <div className="text-center">
+        <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-6">
             Try Our AI Model
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Experience our advanced machine learning model for agricultural price predictions. 
-            Click below to access our interactive Streamlit application.
+            Experience our advanced machine learning model for agricultural price predictions 
+            directly within our platform.
           </p>
-          
-          <a 
-            href="https://agrovalue.streamlit.app/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            <Button className="bg-green-600 hover:bg-green-700">
-              Launch Model <ExternalLink className="ml-2 h-4 w-4" />
-            </Button>
-          </a>
+        </div>
+        
+        <div className="w-full aspect-[16/9] bg-white rounded-lg shadow-lg overflow-hidden">
+          <iframe
+            src="https://agrovalue.streamlit.app/?embedded=true"
+            width="100%"
+            height="100%"
+            frameBorder="0"
+            title="AgroValue AI Model"
+            className="w-full h-full"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          />
         </div>
       </div>
     </div>
