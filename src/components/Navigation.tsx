@@ -27,8 +27,8 @@ const Navigation = () => {
             <Link to="/model" className="text-gray-600 hover:text-green-600 transition-colors">
               Try Model
             </Link>
-            <Link to="/contact" className="text-gray-600 hover:text-green-600 transition-colors">
-              Contact
+            <Link to="/team" className="text-gray-600 hover:text-green-600 transition-colors">
+              Team
             </Link>
           </div>
 
@@ -51,8 +51,8 @@ const Navigation = () => {
                   <Link to="/model" className="text-lg font-medium text-gray-600 hover:text-green-600 transition-colors">
                     Try Model
                   </Link>
-                  <Link to="/contact" className="text-lg font-medium text-gray-600 hover:text-green-600 transition-colors">
-                    Contact
+                  <Link to="/team" className="text-lg font-medium text-gray-600 hover:text-green-600 transition-colors">
+                    Team
                   </Link>
                 </div>
               </SheetContent>
