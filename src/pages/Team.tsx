@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Navigation from "@/components/Navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Github, Linkedin, Mail } from "lucide-react";
+import { FounderSection } from "@/components/contact/FounderSection";
 
 const teamMembers = [
   {
@@ -47,6 +48,8 @@ const Team = () => {
             agricultural price prediction through AI technology.
           </p>
         </motion.div>
+
+        <FounderSection />
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {teamMembers.map((member, index) => (
