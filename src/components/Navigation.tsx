@@ -17,7 +17,7 @@ const Navigation = () => {
           </Link>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-4">
             <Link to="/" className="text-gray-600 hover:text-green-600 transition-colors">
               Home
             </Link>
