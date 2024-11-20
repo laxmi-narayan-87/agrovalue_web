@@ -7,10 +7,10 @@ const Model = () => {
       
       <div className="h-[calc(100vh-64px)]">
         <div className="absolute top-16 left-0 right-0 p-4 text-center z-10 bg-gradient-to-b from-green-50 to-transparent">
-          <h1 className="text-4xl font-bold text-white hover:text-gray-200 transition-colors duration-300 mb-2">
+          <h1 className="text-4xl font-bold text-green-800 hover:text-green-700 transition-colors duration-300 mb-2">
             Try Our AI Model
           </h1>
-          <p className="text-xl text-white/90 hover:text-white transition-colors duration-300 max-w-2xl mx-auto">
+          <p className="text-xl text-green-700 hover:text-green-600 transition-colors duration-300 max-w-2xl mx-auto">
             Experience our advanced machine learning model for agricultural price predictions 
             directly within our platform.
           </p>
