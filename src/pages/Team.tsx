@@ -13,10 +13,10 @@ const Team = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">Meet the Creator</h1>
+          <h1 className="text-5xl font-bold text-gray-900 mb-6">Meet Our Creator</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Meet the mind behind AgroValue who is working to revolutionize
-            agricultural price prediction through AI technology.
+            Discover the innovative mind behind AgroValue who is working to revolutionize
+            agricultural price prediction through cutting-edge AI technology.
           </p>
         </motion.div>
 
@@ -25,7 +25,7 @@ const Team = () => {
 
       <footer className="bg-gray-50 py-12">
         <div className="container mx-auto px-4 text-center text-gray-600">
-          <p>© 2024 AgroValue</p>
+          <p>© 2024 AgroValue. All rights reserved.</p>
         </div>
       </footer>
     </div>
