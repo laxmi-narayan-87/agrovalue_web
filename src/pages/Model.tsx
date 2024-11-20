@@ -16,7 +16,7 @@ const Model = () => {
           </p>
         </div>
         
-        <div className="w-full h-full bg-white shadow-lg overflow-hidden border-2 border-green-100 hover:border-green-200 transition-colors duration-300 hover:shadow-xl">
+        <div className="w-full h-full bg-white shadow-lg overflow-hidden">
           <iframe
             src="https://agrovalue.streamlit.app/?embedded=true"
             width="100%"
