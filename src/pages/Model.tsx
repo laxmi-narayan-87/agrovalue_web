@@ -7,16 +7,16 @@ const Model = () => {
       
       <div className="container mx-auto px-4 py-20">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-green-800 mb-6">
+          <h1 className="text-4xl font-bold text-green-800 hover:text-green-700 transition-colors duration-300 mb-6">
             Try Our AI Model
           </h1>
-          <p className="text-xl text-green-700 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-green-700 hover:text-green-600 transition-colors duration-300 mb-8 max-w-2xl mx-auto">
             Experience our advanced machine learning model for agricultural price predictions 
             directly within our platform.
           </p>
         </div>
         
-        <div className="w-full aspect-[16/9] bg-white rounded-lg shadow-lg overflow-hidden border-2 border-green-100">
+        <div className="w-full aspect-[16/9] bg-white rounded-lg shadow-lg overflow-hidden border-2 border-green-100 hover:border-green-200 transition-colors duration-300 hover:shadow-xl">
           <iframe
             src="https://agrovalue.streamlit.app/?embedded=true"
             width="100%"
